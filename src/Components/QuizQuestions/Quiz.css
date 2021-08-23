@@ -1,0 +1,86 @@
+.outer-quiz {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./../../Images/background.jpg') no-repeat center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.quiz {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid whitesmoke;
+    opacity: 0.6;
+}
+
+.quiz>h1 {
+    text-align: center;
+    font-weight: 400;
+    color: black;
+}
+
+.options {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.options .option {
+    padding: 10px 5px;
+}
+
+.options>.option:hover {
+    background-color: #F4F4F2;
+    color: black;
+    border-radius: 10px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 30px;
+    position: absolute;
+
+}
+
+.stud-name {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.next {
+    right: 30px;
+    position: absolute;
+}
+
+.nav-btn {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .quiz h1 {
+        font-size: 20px;
+    }
+
+    .options {
+        font-size: 14px;
+        /* width: calc(100vh - 20%); */
+    }
+
+}

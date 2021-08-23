@@ -1,0 +1,50 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.teacher form,
+.student form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.teacher form input,
+.student form input {
+    padding: 10px 20px;
+    text-align: center;
+    margin: 2px;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+}
+
+.teacher form input:focus,
+.student form input:focus {
+    outline: none;
+    border: 1px solid #52d869;
+}
+
+.teacher form button,
+.student form button {
+    padding: 10px 20px;
+    text-align: center;
+    background: #52d869;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 20px;
+}
+
+.teacher form button:focus,
+.student form button:focus {
+    color: #52d869;
+    background: white;
+    border: 1px solid #52d869;
+}
